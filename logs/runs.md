@@ -118,3 +118,16 @@ Release completa: 1.055 problemas (easy 322, medium 383, hard 350; AtCoder 602, 
 - **Reavaliação serial** dos 2 estouros (`abc363_c` amostras 1 e 4): **ambos confirmados** como estouro real.
 
 **Saldo:** US$ 20,00 − 0,86 (piloto) − 10,88 (lote 1) ≈ **US$ 8,26** restantes.
+
+## 2026-10-30: lote 2 da rodada completa (`full_lot2`) e estouro do saldo
+
+**Geração:** lote `msgbatch_01FfLwRT6nf4tX5v8JAiD2xf`, 4.845 requisições (969 problemas do LCB × 5), enviado às 00:08 UTC e concluído às 00:17 UTC. 4.845 com sucesso, 0 com erro.
+
+**Custo real: US$ 50,59**, contra a estimativa de US$ 37,73 (+34%). Por dificuldade (US$/amostra): easy 0,0030 (total 4,39), medium 0,0070 (12,48), **hard 0,0210 (33,71)**. Os difíceis custaram ~53% a mais por amostra que no lote 1 (0,0137, base de só 29 problemas), com uma cauda longa: 41 amostras acima de 10 mil tokens de saída (máx. 31.068).
+
+**Consequência:** saldo de créditos negativo em **−US$ 7** (US$ 20 + 35 de créditos − 62,33 de uso). A Batch API processou o lote inteiro mesmo ultrapassando o saldo.
+**Erro de planejamento** (registrado como lição): a margem recomendada (~14%) foi pequena para uma distribuição de custo com cauda longa, estimada a partir de poucos problemas difíceis. Deveria ter sido maior, ou o lote 2 deveria ter sido dividido de novo.
+
+**Custo total da geração (todas as fases): US$ 62,33** (piloto 0,86 + lote 1 10,88 + lote 2 50,59), dentro do orçamento de US$ 100. **A geração está completa:** 1.433 problemas × 5 = 7.165 amostras. Não há mais chamadas à API previstas no desenho.
+
+**Avaliação do LCB do lote 2 (em andamento, pausada em 2026-10-30):** 100 blocos (`--chunk i/100`, `--workers 2`, Docker `--cpus=2 --memory=4g`). Blocos **0–58 concluídos, todos com exit 0**; interrompida a pedido no bloco 59, que não gravou saída (a escrita só ocorre ao fim do bloco). **Faltam os blocos 59–99.** Para retomar, rodar apenas os blocos sem pasta `lcb_eval_paralelo_blocoXde100_*`. Depois: juntar os resultados, reavaliar em serial os estouros de tempo (-3/-5) e registrar aqui.
