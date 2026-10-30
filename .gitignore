@@ -1,0 +1,6 @@
+.env
+.venv*/
+__pycache__/
+LiveCodeBench/
+# Datasets: o do LCB tem 134 MB (acima do limite do GitHub). Ver hashes em config/params.yaml
+data/raw/datasets/

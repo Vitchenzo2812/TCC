@@ -1,0 +1,3 @@
+2026-10-29T23:20:53.196331+00:00 in_progress {'canceled': 0, 'errored': 0, 'expired': 0, 'processing': 2320, 'succeeded': 0}
+2026-10-29T23:22:53.514519+00:00 in_progress {'canceled': 0, 'errored': 0, 'expired': 0, 'processing': 2320, 'succeeded': 0}
+resultados gravados; contagem: {'canceled': 0, 'errored': 0, 'expired': 0, 'processing': 0, 'succeeded': 2320}

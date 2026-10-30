@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-10-29T22:42:36.206995+00:00",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "anthropic_sdk": "2.3.0",
+  "params": {
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "thinking": {
+      "type": "adaptive",
+      "display": "summarized"
+    },
+    "max_tokens": 64000,
+    "n_samples": 5,
+    "benchmarks": {
+      "mbpp": {
+        "harness": "evalplus",
+        "evalplus_version": "0.3.1",
+        "dataset_version": "v0.2.0",
+        "dataset_file": "data/raw/datasets/MbppPlus-v0.2.0.jsonl",
+        "dataset_sha256": "ee1701c904eb306523280b5a38a661d13248d16dd92d2e4fe2de36b519d3c413",
+        "dataset_md5_evalplus": "92743def42b30b354a30898e4fa33fb0",
+        "n_problems": 378,
+        "prompt_template": "prompts/mbpp_user.txt"
+      },
+      "lcb": {
+        "harness": "livecodebench",
+        "lcb_commit": "28fef95ea8c9f7a547c8329f2cd3d32b92c1fa24",
+        "lcb_release": "release_v6",
+        "dataset_file": "data/raw/datasets/lcb_test6.jsonl",
+        "dataset_sha256": "bb4c364f71921c4495a6ad15abe1a927350b720009f4933e2e71f8af0f6fd1f5",
+        "n_problems": 175,
+        "system_template": "prompts/lcb_system.txt",
+        "prompt_template": "prompts/lcb_user.txt"
+      }
+    },
+    "pilot": {
+      "seed": 42,
+      "mbpp": 10,
+      "lcb": {
+        "easy": 3,
+        "medium": 3,
+        "hard": 4
+      }
+    },
+    "evaluation": {
+      "docker_cpus": 2,
+      "docker_memory": "4g"
+    },
+    "batch_pricing_usd_per_mtok": {
+      "input": 2.0,
+      "output": 10.0
+    },
+    "budget_usd": 100
+  },
+  "mode": "batch",
+  "batch_id": "msgbatch_01JgEkbzgwx5XmSDVNaL4N1M",
+  "n_requests": 100
+}

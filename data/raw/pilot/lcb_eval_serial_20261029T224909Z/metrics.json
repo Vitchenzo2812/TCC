@@ -1,0 +1,13 @@
+{
+ "mode": "serial",
+ "timeout": 6,
+ "n_samples": 1,
+ "metrics": {
+  "pass@1": 1.0,
+  "detail": {
+   "pass@1": {
+    "0": 1.0
+   }
+  }
+ }
+}

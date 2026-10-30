@@ -1,0 +1,21 @@
+{
+  "submitted_utc": "2026-10-29T23:20:32.740272+00:00",
+  "batch": {
+    "id": "msgbatch_019kEAvQ9n2ydQKjvz7aCGkP",
+    "archived_at": null,
+    "cancel_initiated_at": null,
+    "created_at": "2026-10-29T23:21:17.153986Z",
+    "ended_at": null,
+    "expires_at": "2026-10-30T23:21:17.153986Z",
+    "processing_status": "in_progress",
+    "request_counts": {
+      "canceled": 0,
+      "errored": 0,
+      "expired": 0,
+      "processing": 2320,
+      "succeeded": 0
+    },
+    "results_url": null,
+    "type": "message_batch"
+  }
+}
