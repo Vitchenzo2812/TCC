@@ -33,7 +33,36 @@ cd scripts
 Avaliação do piloto: *pendente*.
 
 ## Fases 2 a 7
-*Pendente.*
+
+A geração usa chamadas pagas à API; os resultados já estão em `data/raw/`, e o restante é local e gratuito. Comandos no Git Bash, a partir da raiz do repositório.
+
+**Fase 2 (geração, um lote por vez):**
+```bash
+python scripts/generate.py batch-submit --run full_lot1 --ids config/lots/lot1.json
+python scripts/generate.py batch-collect --run full_lot1
+python scripts/extract_code.py --run full_lot1
+```
+
+**Fase 3 (avaliação, só em Docker):** `to_evalplus.py` e `to_lcb.py` montam as entradas. O LCB roda em blocos (`--chunk i/n`), e todo estouro de tempo é reavaliado com `--serial --only`.
+```bash
+MSYS_NO_PATHCONV=1 docker run --rm --network none --cpus=2 --memory=4g -v "$(pwd -W):/work" -w /opt/LiveCodeBench tcc-lcb:28fef95 python /work/scripts/lcb_eval.py --run full_lot2 --workers 2 --chunk 0/100
+```
+
+**Fase 4 (manifestação e métricas):**
+```bash
+MSYS_NO_PATHCONV=1 docker run --rm --network none --cpus=2 --memory=4g -v "$(pwd -W):/work" -w /work tcc-evalplus:0.3.1 python scripts/mbpp_reexec.py --run full_lot1
+MSYS_NO_PATHCONV=1 docker run --rm --network none --cpus=2 --memory=4g -v "$(pwd -W):/work" -w /work tcc-evalplus:0.3.1 python scripts/mbpp_flaky.py --run full_lot1
+python scripts/metrics.py
+python scripts/manifestation.py
+```
+
+**Fases 5 e 6 (codificação e concordância):**
+```bash
+python scripts/build_sheet.py
+python scripts/agreement.py --a etapa1_A.xlsx --b etapa1_B.xlsx
+```
+
+O codebook está em `analysis/codebook.md`, e o histórico completo da execução em `logs/runs.md`.
 
 ## Estrutura
 Ver a seção 4 do roteiro. `data/raw/` é de escrita única: os scripts abrem os arquivos em modo `x` e falham se o arquivo já existir.

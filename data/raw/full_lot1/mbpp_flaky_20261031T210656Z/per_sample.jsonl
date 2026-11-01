@@ -1,0 +1,6 @@
+{"task_id": "Mbpp/392", "sample_idx": 1, "suite": "plus", "aprovacoes": 20, "repeticoes": 20, "falhou_na_entrada": "[[1000000]]", "maior_tempo_referencia": 0.2587316036224365}
+{"task_id": "Mbpp/84", "sample_idx": 0, "suite": "plus", "aprovacoes": 20, "repeticoes": 20, "falhou_na_entrada": "[[1000000]]", "maior_tempo_referencia": 0.10335397720336914}
+{"task_id": "Mbpp/84", "sample_idx": 1, "suite": "plus", "aprovacoes": 20, "repeticoes": 20, "falhou_na_entrada": "[[1000000]]", "maior_tempo_referencia": 0.10335397720336914}
+{"task_id": "Mbpp/84", "sample_idx": 2, "suite": "plus", "aprovacoes": 20, "repeticoes": 20, "falhou_na_entrada": "[[1000000]]", "maior_tempo_referencia": 0.10335397720336914}
+{"task_id": "Mbpp/84", "sample_idx": 3, "suite": "plus", "aprovacoes": 20, "repeticoes": 20, "falhou_na_entrada": "[[1000000]]", "maior_tempo_referencia": 0.10335397720336914}
+{"task_id": "Mbpp/84", "sample_idx": 4, "suite": "plus", "aprovacoes": 20, "repeticoes": 20, "falhou_na_entrada": "[[1000000]]", "maior_tempo_referencia": 0.10335397720336914}

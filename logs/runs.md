@@ -131,3 +131,34 @@ Release completa: 1.055 problemas (easy 322, medium 383, hard 350; AtCoder 602, 
 **Custo total da geração (todas as fases): US$ 62,33** (piloto 0,86 + lote 1 10,88 + lote 2 50,59), dentro do orçamento de US$ 100. **A geração está completa:** 1.433 problemas × 5 = 7.165 amostras. Não há mais chamadas à API previstas no desenho.
 
 **Avaliação do LCB do lote 2 (em andamento, pausada em 2026-10-30):** 100 blocos (`--chunk i/100`, `--workers 2`, Docker `--cpus=2 --memory=4g`). Blocos **0–58 concluídos, todos com exit 0**; interrompida a pedido no bloco 59, que não gravou saída (a escrita só ocorre ao fim do bloco). **Faltam os blocos 59–99.** Para retomar, rodar apenas os blocos sem pasta `lcb_eval_paralelo_blocoXde100_*`. Depois: juntar os resultados, reavaliar em serial os estouros de tempo (-3/-5) e registrar aqui.
+
+**Avaliação do LCB do lote 2 (concluída em 2026-10-31):** blocos 0–99 com exit 0 e 4.845 resultados únicos. 233 amostras reprovadas na execução paralela (195 resposta errada, 36 código −4, 2 estouros). **Reavaliação serial dos 2 estouros:** `abc371_f`/1 confirmado; `abc379_g`/2 **aprovada** (estouro espúrio).
+
+## 2026-10-31: métricas, manifestação e planilhas
+
+**Reexecução do MBPP+ (`scripts/mbpp_reexec.py`, serial, no Docker):** 237 amostras reprovadas. O EvalPlus não informa o tipo de erro; o veredito e a entrada vêm do `untrusted_check`, e a amostra roda de novo naquela entrada com as mesmas proteções para capturar exceção, estouro ou saída.
+
+**Correção de falsos negativos do MBPP+:** 6 das 237 amostras passaram na reexecução. `scripts/mbpp_flaky.py` repetiu cada uma 20 vezes, em serial, nos dois conjuntos: **20/20 aprovações nas 6** (`Mbpp/84` amostras 0–4 e `Mbpp/392` amostra 1), todas com a entrada `[1000000]`. Eram estouros espúrios por carga: `evalplus.evaluate` usa `--parallel 2`, e um `TimeoutException` dentro de uma entrada é registrado como `fail`, não como `timeout`. Pela seção 9 do roteiro, contam como aprovadas. O arquivo original do EvalPlus não foi alterado; a correção é aplicada em `results.py`. Efeito: os números do lote 1 mudam de 57 para **55 problemas com falha** e de 237 para **231 amostras reprovadas**, e pass@1 plus de 0,875 para **0,878**.
+
+**Bibliotecas de terceiros no código gerado do LCB:** `numpy` (388 amostras), `sortedcontainers` (6) e `scipy` (5 importações em 4 amostras). A imagem não traz `scipy` nem `sortedcontainers`.
+- `sortedcontainers` não está nos arquivos de dependência do LCB, então a reprovação de `3527`/4 por `ModuleNotFoundError` é igual à do ambiente oficial. As 5 amostras de `3000` importam dentro de um bloco indentado e passaram.
+- `scipy` está nos lockfiles do LCB, mas não na imagem. As 4 amostras (`abc301_e`/1, `abc334_e`/1–3) **passaram mesmo assim**, então nenhuma reavaliação foi necessária.
+- A versão do `numpy` da imagem não foi fixada na do lockfile do LCB (ameaça menor à validade).
+
+**Resultados finais (7.165 amostras, todas `ok`: 0 truncadas, 0 recusas, 0 sem código):**
+| Grupo | Problemas | Pass@1 | IC 95% bootstrap | Problemas com falha |
+|---|---|---:|---|---:|
+| MBPP+ base | 378 | 0,991 | 0,983–0,998 | 6 |
+| MBPP+ plus | 378 | 0,878 | 0,845–0,908 | 55 |
+| LCB geral | 1.055 | 0,953 | 0,941–0,965 | 67 |
+| LCB easy | 322 | 0,993 | 0,983–1,000 | 3 |
+| LCB medium | 383 | 0,963 | 0,944–0,980 | 18 |
+| LCB hard | 350 | 0,906 | 0,876–0,934 | 46 |
+
+- **Falhas:** 122 problemas (55 MBPP+, 67 LCB) e 477 amostras reprovadas. Recorrência: **80 sistemáticas, 42 ocasionais**. A mesma manifestação aparece em todas as amostras reprovadas em 118 de 122 problemas.
+- **Manifestação (amostras):** 406 resposta errada, 67 exceção, 4 estouro de tempo, **0 erro de sintaxe**.
+- **Suspeita de defeito do benchmark (sugestão mecânica):** 50 problemas. A decisão é dos pesquisadores, e a amostra efetiva de causas depende dela.
+
+**Planilhas (`scripts/build_sheet.py`):** 111 falhas na amostra oficial e 11 na calibração, sorteadas com semente 42, proporcionalmente ao nível de complexidade e com ao menos uma de cada nível. `agreement.py` foi testado com dados sintéticos, fora do repositório.
+
+**Limitação:** o conjunto de sensibilidade pós-corte (opcional, AtCoder) não foi executado, por decisão de não haver mais gastos com a API. Fica declarado como limitação.

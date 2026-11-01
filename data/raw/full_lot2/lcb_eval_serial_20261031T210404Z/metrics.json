@@ -1,0 +1,16 @@
+{
+ "mode": "serial",
+ "workers": 1,
+ "timeout": 6,
+ "chunk": null,
+ "n_samples": 2,
+ "metrics": {
+  "pass@1": 0.5,
+  "detail": {
+   "pass@1": {
+    "0": 0.0,
+    "1": 1.0
+   }
+  }
+ }
+}
