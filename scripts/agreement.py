@@ -17,6 +17,17 @@ from common import PROCESSED
 OUT = PROCESSED / "coding"
 
 
+def kappa_ci(a: pd.Series, b: pd.Series) -> tuple:
+    """Kappa de Cohen e IC 95% por bootstrap (2.000 reamostragens, semente 42)."""
+    a, b = a.reset_index(drop=True), b.reset_index(drop=True)
+    rng = np.random.default_rng(42)
+    boots = []
+    for _ in range(2000):
+        idx = rng.integers(0, len(a), len(a))
+        boots.append(cohen_kappa_score(a.iloc[idx], b.iloc[idx]))
+    return cohen_kappa_score(a, b), tuple(np.nanpercentile(boots, [2.5, 97.5]))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--a", required=True)
@@ -27,27 +38,27 @@ def main():
     df = a.merge(b, on="id_falha", validate="one_to_one")
     assert len(df) == len(a) == len(b), "as planilhas de A e B têm falhas diferentes"
 
-    both_defect = (df["defeito_benchmark_A"] == "sim") & (df["defeito_benchmark_B"] == "sim")
-    defect_split = df[(df["defeito_benchmark_A"] == "sim") ^ (df["defeito_benchmark_B"] == "sim")]
+    for c in df.columns[2:]:
+        df[c] = df[c].str.strip()
+    da, db = df["defeito_benchmark_A"], df["defeito_benchmark_B"]
+    both_defect = (da == "sim") & (db == "sim")
+    defect_split = df[(da == "sim") ^ (db == "sim")]
     coded = df[~both_defect]
     missing = coded[coded["causa_principal_A"].isna() | coded["causa_principal_B"].isna()]
     coded = coded.drop(index=missing.index).reset_index(drop=True)
     ca, cb = coded["causa_principal_A"], coded["causa_principal_B"]
 
-    kappa = cohen_kappa_score(ca, cb)
+    kappa, (lo, hi) = kappa_ci(ca, cb)
     pct = (ca == cb).mean()
-    rng = np.random.default_rng(42)
-    boots = []
-    for _ in range(2000):
-        idx = rng.integers(0, len(coded), len(coded))
-        boots.append(cohen_kappa_score(ca.iloc[idx], cb.iloc[idx]))
-    lo, hi = np.nanpercentile(boots, [2.5, 97.5])
+    # A decisão de defeito do benchmark também é um julgamento dos codificadores, sobre todas as falhas.
+    kappa_defect, (dlo, dhi) = kappa_ci(da, db)
 
     labels = sorted(set(ca) | set(cb))
     pd.DataFrame(confusion_matrix(ca, cb, labels=labels), index=labels, columns=labels).to_csv(
         OUT / "confusion_matrix.csv", encoding="utf-8-sig")
     coded[ca != cb].to_csv(OUT / "divergencias.csv", index=False, encoding="utf-8-sig")
-    result = {"falhas": len(df), "defeito_por_ambos": int(both_defect.sum()),
+    result = {"falhas": len(df), "kappa_defeito": kappa_defect, "ic95_bootstrap_defeito": [dlo, dhi],
+              "concordancia_percentual_defeito": (da == db).mean(), "defeito_por_ambos": int(both_defect.sum()),
               "defeito_divergente_para_C": defect_split["id_falha"].tolist(),
               "sem_causa_preenchida": missing["id_falha"].tolist(), "falhas_no_kappa": len(coded),
               "kappa": kappa, "ic95_bootstrap": [lo, hi], "concordancia_percentual": pct}

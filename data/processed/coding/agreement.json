@@ -1,0 +1,47 @@
+{
+ "falhas": 111,
+ "kappa_defeito": 0.6957621758380772,
+ "ic95_bootstrap_defeito": [
+  0.5286584688598683,
+  0.8361585637971714
+ ],
+ "concordancia_percentual_defeito": 0.8828828828828829,
+ "defeito_por_ambos": 76,
+ "defeito_divergente_para_C": [
+  "F011",
+  "F013",
+  "F019",
+  "F049",
+  "F051",
+  "F053",
+  "F063",
+  "F075",
+  "F077",
+  "F078",
+  "F080",
+  "F082",
+  "F104"
+ ],
+ "sem_causa_preenchida": [
+  "F011",
+  "F013",
+  "F019",
+  "F049",
+  "F051",
+  "F053",
+  "F063",
+  "F075",
+  "F077",
+  "F078",
+  "F080",
+  "F082",
+  "F104"
+ ],
+ "falhas_no_kappa": 22,
+ "kappa": 0.33333333333333337,
+ "ic95_bootstrap": [
+  0.0784937575513492,
+  0.5555555555555556
+ ],
+ "concordancia_percentual": 0.45454545454545453
+}

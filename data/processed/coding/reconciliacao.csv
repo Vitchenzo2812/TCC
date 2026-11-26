@@ -1,0 +1,112 @@
+﻿id_falha,problem_id,benchmark,dificuldade,nivel,manifestacao,recorrencia,suspeita_defeito_benchmark,defeito_benchmark_A,causa_principal_A,defeito_benchmark_B,causa_principal_B,defeito_final,causa_final,causas_secundarias_final,origem
+F001,Mbpp/102,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F002,Mbpp/103,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F003,Mbpp/113,mbpp,,1. MBPP+,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F004,Mbpp/119,mbpp,,1. MBPP+,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F006,Mbpp/139,mbpp,,1. MBPP+,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F007,Mbpp/14,mbpp,,1. MBPP+,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F008,Mbpp/16,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F009,Mbpp/160,mbpp,,1. MBPP+,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F010,Mbpp/161,mbpp,,1. MBPP+,excecao,ocasional,False,não,Missing Corner Case,não,Missing Corner Case,não,Missing Corner Case,,consenso
+F011,Mbpp/223,mbpp,,1. MBPP+,excecao,sistematica,False,não,Missing Corner Case,sim,,não,Missing Corner Case,,divergência de defeito: vale A
+F012,Mbpp/233,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F013,Mbpp/255,mbpp,,1. MBPP+,excecao,sistematica,False,não,Complexidade insuficiente,sim,,não,Complexidade insuficiente,,divergência de defeito: vale A
+F014,Mbpp/261,mbpp,,1. MBPP+,resposta_errada,sistematica,True,não,Prompt-biased Code,não,Misinterpretation,não,Prompt-biased Code,,divergência de causa: vale A
+F015,Mbpp/267,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F016,Mbpp/276,mbpp,,1. MBPP+,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F017,Mbpp/278,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F018,Mbpp/287,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F019,Mbpp/294,mbpp,,1. MBPP+,resposta_errada,sistematica,False,não,Non-Prompted Consideration,sim,,não,Non-Prompted Consideration,,divergência de defeito: vale A
+F020,Mbpp/300,mbpp,,1. MBPP+,excecao,ocasional,False,sim,,sim,,sim,,,consenso
+F021,Mbpp/305,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F022,Mbpp/311,mbpp,,1. MBPP+,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F023,Mbpp/406,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F025,Mbpp/410,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F026,Mbpp/415,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F027,Mbpp/440,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F028,Mbpp/446,mbpp,,1. MBPP+,resposta_errada,sistematica,True,não,Misinterpretation,não,Misinterpretation,não,Misinterpretation,,consenso
+F029,Mbpp/448,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F030,Mbpp/451,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F031,Mbpp/459,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F032,Mbpp/468,mbpp,,1. MBPP+,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F033,Mbpp/556,mbpp,,1. MBPP+,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F034,Mbpp/559,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F036,Mbpp/577,mbpp,,1. MBPP+,excecao,ocasional,False,sim,,sim,,sim,,,consenso
+F037,Mbpp/593,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F038,Mbpp/597,mbpp,,1. MBPP+,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F039,Mbpp/602,mbpp,,1. MBPP+,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F040,Mbpp/620,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F042,Mbpp/639,mbpp,,1. MBPP+,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F043,Mbpp/735,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F044,Mbpp/739,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F045,Mbpp/74,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F046,Mbpp/748,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F047,Mbpp/765,mbpp,,1. MBPP+,tempo_limite,ocasional,False,não,Complexidade insuficiente,não,Complexidade insuficiente,não,Complexidade insuficiente,,consenso
+F048,Mbpp/771,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F049,Mbpp/785,mbpp,,1. MBPP+,excecao,ocasional,False,não,Missing Corner Case,sim,,não,Missing Corner Case,,divergência de defeito: vale A
+F050,Mbpp/790,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F051,Mbpp/792,mbpp,,1. MBPP+,resposta_errada,ocasional,False,não,Misinterpretation,sim,,não,Misinterpretation,,divergência de defeito: vale A
+F052,Mbpp/800,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F053,Mbpp/803,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,não,Non-Prompted Consideration,sim,,,divergência de defeito: vale A
+F054,Mbpp/806,mbpp,,1. MBPP+,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F057,abc351_a,lcb,easy,2. LCB fácil,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F058,abc375_b,lcb,easy,2. LCB fácil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F059,3308,lcb,medium,3. LCB médio,excecao,sistematica,False,sim,,sim,,sim,,,consenso
+F060,3442,lcb,medium,3. LCB médio,excecao,sistematica,False,sim,,sim,,sim,,,consenso
+F061,3453,lcb,medium,3. LCB médio,resposta_errada,ocasional,False,sim,,sim,,sim,,,consenso
+F062,3613,lcb,medium,3. LCB médio,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F063,3655,lcb,medium,3. LCB médio,resposta_errada,sistematica,True,não,Missing Corner Case,sim,,sim,,,divergência de defeito: vale a evidência de execução
+F064,3763,lcb,medium,3. LCB médio,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F065,abc311_c,lcb,medium,3. LCB médio,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F066,abc319_c,lcb,medium,3. LCB médio,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F067,abc350_c,lcb,medium,3. LCB médio,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F069,abc362_c,lcb,medium,3. LCB médio,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F070,abc363_c,lcb,medium,3. LCB médio,tempo_limite,ocasional,False,não,Complexidade insuficiente,não,Complexidade insuficiente,não,Complexidade insuficiente,,consenso
+F071,abc374_d,lcb,medium,3. LCB médio,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F072,abc375_c,lcb,medium,3. LCB médio,excecao,ocasional,False,sim,,sim,,sim,,,consenso
+F073,abc376_c,lcb,medium,3. LCB médio,resposta_errada,ocasional,False,não,Algoritmo incorreto,não,Silly Mistake,não,Algoritmo incorreto,,divergência de causa: vale A
+F074,abc392_d,lcb,medium,3. LCB médio,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F075,arc189_a,lcb,medium,3. LCB médio,resposta_errada,sistematica,True,sim,,não,Algoritmo incorreto,sim,,,divergência de defeito: vale A
+F076,arc191_a,lcb,medium,3. LCB médio,resposta_errada,ocasional,False,não,Missing Corner Case,não,Missing Corner Case,não,Missing Corner Case,,consenso
+F077,2849,lcb,hard,4. LCB difícil,excecao,sistematica,False,não,Missing Corner Case,sim,,sim,,,divergência de defeito: vale a evidência de execução
+F078,3344,lcb,hard,4. LCB difícil,excecao,sistematica,False,não,Missing Corner Case,sim,,sim,,,divergência de defeito: vale a evidência de execução
+F079,3454,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Missing Corner Case,não,Silly Mistake,não,Missing Corner Case,,divergência de causa: vale A
+F080,3527,lcb,hard,4. LCB difícil,excecao,ocasional,False,não,Hallucinated Object,sim,,não,Hallucinated Object,,divergência de defeito: vale A
+F082,3575,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Algoritmo incorreto,sim,,sim,,,divergência de defeito: vale a evidência de execução
+F083,abc314_e,lcb,hard,4. LCB difícil,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F084,abc315_e,lcb,hard,4. LCB difícil,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F085,abc315_f,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F086,abc324_f,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F087,abc327_e,lcb,hard,4. LCB difícil,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F088,abc333_e,lcb,hard,4. LCB difícil,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F089,abc337_e,lcb,hard,4. LCB difícil,excecao,sistematica,False,sim,,sim,,sim,,,consenso
+F090,abc340_e,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Silly Mistake,não,Silly Mistake,não,Silly Mistake,,consenso
+F091,abc343_e,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F092,abc350_e,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F093,abc351_d,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Misinterpretation,não,Silly Mistake,não,Misinterpretation,,divergência de causa: vale A
+F094,abc355_e,lcb,hard,4. LCB difícil,excecao,sistematica,False,sim,,sim,,sim,,,consenso
+F095,abc363_f,lcb,hard,4. LCB difícil,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F096,abc366_g,lcb,hard,4. LCB difícil,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F097,abc371_f,lcb,hard,4. LCB difícil,tempo_limite,ocasional,False,não,Complexidade insuficiente,não,Complexidade insuficiente,não,Complexidade insuficiente,,consenso
+F098,abc373_g,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F099,abc374_e,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Silly Mistake,não,Silly Mistake,não,Silly Mistake,,consenso
+F101,abc385_f,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F102,abc392_f,lcb,hard,4. LCB difícil,excecao,sistematica,False,sim,,sim,,sim,,,consenso
+F103,abc396_e,lcb,hard,4. LCB difícil,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F104,abc397_d,lcb,hard,4. LCB difícil,resposta_errada,sistematica,True,não,Missing Corner Case,sim,,não,Missing Corner Case,,divergência de defeito: vale A
+F105,abc398_g,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Algoritmo incorreto,não,Algoritmo incorreto,não,Algoritmo incorreto,,consenso
+F106,arc181_c,lcb,hard,4. LCB difícil,resposta_errada,sistematica,True,sim,,sim,,sim,,,consenso
+F107,arc182_c,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Misinterpretation,não,Silly Mistake,não,Misinterpretation,,divergência de causa: vale A
+F108,arc182_e,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Algoritmo incorreto,não,Silly Mistake,não,Algoritmo incorreto,,divergência de causa: vale A
+F109,arc183_b,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Missing Corner Case,não,Algoritmo incorreto,não,Missing Corner Case,,divergência de causa: vale A
+F111,arc184_c,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Silly Mistake,não,Misinterpretation,não,Silly Mistake,,divergência de causa: vale A
+F112,arc184_d,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Algoritmo incorreto,não,Algoritmo incorreto,não,Algoritmo incorreto,,consenso
+F113,arc184_e,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Algoritmo incorreto,não,Silly Mistake,não,Algoritmo incorreto,,divergência de causa: vale A
+F114,arc185_c,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F115,arc188_c,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F116,arc188_d,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Algoritmo incorreto,não,Missing Corner Case,não,Algoritmo incorreto,,divergência de causa: vale A
+F117,arc190_a,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F118,arc191_c,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F119,arc191_d,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Missing Corner Case,não,Algoritmo incorreto,não,Missing Corner Case,,divergência de causa: vale A
+F121,arc195_c,lcb,hard,4. LCB difícil,resposta_errada,sistematica,False,sim,,sim,,sim,,,consenso
+F122,arc196_a,lcb,hard,4. LCB difícil,resposta_errada,ocasional,False,não,Algoritmo incorreto,não,Silly Mistake,não,Algoritmo incorreto,,divergência de causa: vale A

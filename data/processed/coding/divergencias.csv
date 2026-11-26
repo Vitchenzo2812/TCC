@@ -1,0 +1,13 @@
+﻿id_falha,problem_id,defeito_benchmark_A,causa_principal_A,defeito_benchmark_B,causa_principal_B
+F014,Mbpp/261,não,Prompt-biased Code,não,Misinterpretation
+F073,abc376_c,não,Algoritmo incorreto,não,Silly Mistake
+F079,3454,não,Missing Corner Case,não,Silly Mistake
+F093,abc351_d,não,Misinterpretation,não,Silly Mistake
+F107,arc182_c,não,Misinterpretation,não,Silly Mistake
+F108,arc182_e,não,Algoritmo incorreto,não,Silly Mistake
+F109,arc183_b,não,Missing Corner Case,não,Algoritmo incorreto
+F111,arc184_c,não,Silly Mistake,não,Misinterpretation
+F113,arc184_e,não,Algoritmo incorreto,não,Silly Mistake
+F116,arc188_d,não,Algoritmo incorreto,não,Missing Corner Case
+F119,arc191_d,não,Missing Corner Case,não,Algoritmo incorreto
+F122,arc196_a,não,Algoritmo incorreto,não,Silly Mistake

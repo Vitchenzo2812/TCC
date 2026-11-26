@@ -1,0 +1,38 @@
+﻿id_falha;grupo;verificacao;resultado;evidencia
+F057;H;passa com stdin real e falha com stdin em StringIO (harness);CONFIRMA;stdin real -> '5'  | stdin em memória -> '1'  | esperado '5'
+F072;H;passa com stdin real e falha com stdin em StringIO (harness);CONFIRMA;stdin real -> '........\n#######.\n#.....#.\n#.###.#.\n#.#...#.\n#.#####.\n#.....'  | stdin em memória -> '' AttributeError: '_io.StringIO' object has no attribute 'buffer' | esperado '........\n#######.\n#.....#.\n#.###.#.\n#.#...#.\n#.#####.\n#.....'
+F058;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 7.58e-12; tolerância do enunciado 1e-06"
+F062;T;saída dentro da tolerância numérica do enunciado;NAO_CONFIRMA;"o enunciado NÃO declara tolerância numérica; a classificação como defeito por tolerância não se sustenta só por este critério"
+F064;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 2.86e-06; tolerância do enunciado 1e-05"
+F066;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 0.00e+00; tolerância do enunciado 1e-08"
+F071;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 1.38e-16; tolerância do enunciado 1e-06"
+F074;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 7.70e-14; tolerância do enunciado 1e-08"
+F083;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 2.61e-14; tolerância do enunciado 1e-05"
+F085;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 0.00e+00; tolerância do enunciado 1e-05"
+F086;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 0.00e+00; tolerância do enunciado 1e-09 (saída da coluna 'obtido', entrada truncada)"
+F087;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 8.86e-16; tolerância do enunciado 1e-06"
+F092;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 0.00e+00; tolerância do enunciado 1e-06"
+F101;T;saída dentro da tolerância numérica do enunciado;CONFIRMA;"maior erro (abs. ou rel.) 0.00e+00; tolerância do enunciado 1e-09"
+F091;V;posições dos cubos geram exatamente (V1, V2, V3);CONFIRMA;"volumes gerados [840, 84, 7]; pedidos [840, 84, 7]"
+F098;V;permutação sem cruzamento de segmentos;CONFIRMA;"R=[2, 3, 1]; há cruzamento: False"
+F115;V;conjunto de confusos não gera contradição (força bruta);CONFIRMA;saída do código '11111': sem contradição = True
+F059;R;entrada viola 1 <= s.length;CONFIRMA;len(s) = 0
+F060;R;entrada viola 1 <= rewardValues[i];CONFIRMA;"menor valor na entrada = -999 (entrada truncada na planilha; checados os valores visíveis)"
+F077;R;entrada viola 1 <= nums[i] <= nums.length;CONFIRMA;nums = [5], len = 1
+F078;R;entrada viola 3 <= points.length;CONFIRMA;points = [0, 0] (menos de 3 pontos e nem é lista de pares)
+F082;R;entrada viola nums[i] < 2^7;CONFIRMA;"maior valor na entrada = 400 (entrada truncada na planilha; checados os valores visíveis)"
+F102;R;entrada viola 1 <= P_i <= i;CONFIRMA;(i, P_i) inválidos: [(1, 3), (2, 3), (4, 5)]
+F040;C;força bruta: maior subconjunto com todos os pares divisíveis;CONFIRMA;"força bruta = 3; código = 3; gabarito = 4"
+F044;C;aritmética exata: índice mínimo com T(k) >= 10^(n-1);CONFIRMA;"código mínimo: True; gabarito mínimo: False"
+F063;C;Dijkstra proibindo zero no dígito mais significativo reproduz o gabarito;CONFIRMA;"permitindo zero à esquerda = 80458 (saída do código); proibindo = 93646; gabarito = 93646"
+F105;C;jogo resolvido por força bruta diverge da regra do código;CONFIRMA;"1 de 46 grafos com resposta errada; exemplo: N=6, arestas=[]"
+F107;C;trocar o expoente N+1 por N faz o código acertar os exemplos;CONFIRMA;(original, corrigido, esperado): [('237', '16', '16'), ('322924', '16095', '16095'), ('547939455', '182955659', '182955659')]
+F108;C;contar x < t (em vez de x >= t) faz o código acertar os exemplos;CONFIRMA;(original, corrigido, esperado): [('-5', '4', '4'), ('0', '0', '0'), ('-28514047', '29484897', '29484897')]
+F122;C;força bruta mostra que o código erra em entradas pequenas;CONFIRMA;"38/100 casos errados; exemplo (entrada, código, correto): ([18, 20, 9, 20, 19], '4', 13)"
+F102;C;código acerta todas as entradas válidas (comparado com simulação);CONFIRMA;0/150 entradas válidas com saída errada
+F059;C;código acerta os exemplos do enunciado;CONFIRMA;"saídas para os exemplos: [""'ba'"", ""'abcd'""] (esperado 'ba', 'abcd')"
+F068;H;passa com stdin real e falha com stdin em StringIO (harness);CONFIRMA;stdin real -> 'Yes'  | stdin em memória -> '' ValueError: not enough values to unpack (expected 6, got 0) | esperado 'Yes'
+F056;V;saída é um inteiro 0-9 diferente de A+B;CONFIRMA;"A+B=7; código imprime 0"
+F110;V;procedimento válido e com score ótimo (igual ao do gabarito);CONFIRMA;"score do código 4; score do gabarito 4"
+F100;C;código erra contra simulação e a correção no pull-up zera os erros;CONFIRMA;"150 casos aleatórios: original erra 14, corrigido erra 0; corrigido passa na entrada da falha: True"
+F120;C;solucionador exato do jogo concorda com o código (gabarito suspeito);CONFIRMA;"solucionador acerta as 3 amostras: True; exato = Fennec; código = Fennec; gabarito = Snuke"

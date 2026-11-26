@@ -23,8 +23,8 @@ benchmarks:
   lcb:
     harness: livecodebench
     lcb_commit: 28fef95ea8c9f7a547c8329f2cd3d32b92c1fa24
-    lcb_release: release_v6   # release completa: test.jsonl a test6.jsonl (decisão de 2026-10-29, ver logs/runs.md)
-    dataset_files:            # sha256 em logs/runs.md
+    lcb_release: release_v6   # release completa: test.jsonl a test6.jsonl (decisão de 2026-10-29)
+    dataset_files:            # sha256 
       - data/raw/datasets/lcb_test.jsonl
       - data/raw/datasets/lcb_test2.jsonl
       - data/raw/datasets/lcb_test3.jsonl

@@ -1,0 +1,83 @@
+﻿id_falha,problem_id,nivel,manifestacao,recorrencia,suspeita_defeito_benchmark,origem
+F001,Mbpp/102,1. MBPP+,resposta_errada,sistematica,True,consenso
+F002,Mbpp/103,1. MBPP+,resposta_errada,sistematica,True,consenso
+F003,Mbpp/113,1. MBPP+,resposta_errada,ocasional,False,consenso
+F004,Mbpp/119,1. MBPP+,resposta_errada,sistematica,False,consenso
+F006,Mbpp/139,1. MBPP+,resposta_errada,ocasional,False,consenso
+F007,Mbpp/14,1. MBPP+,resposta_errada,ocasional,False,consenso
+F008,Mbpp/16,1. MBPP+,resposta_errada,sistematica,True,consenso
+F009,Mbpp/160,1. MBPP+,resposta_errada,sistematica,False,consenso
+F012,Mbpp/233,1. MBPP+,resposta_errada,sistematica,True,consenso
+F015,Mbpp/267,1. MBPP+,resposta_errada,sistematica,True,consenso
+F016,Mbpp/276,1. MBPP+,resposta_errada,ocasional,False,consenso
+F017,Mbpp/278,1. MBPP+,resposta_errada,sistematica,True,consenso
+F018,Mbpp/287,1. MBPP+,resposta_errada,sistematica,True,consenso
+F020,Mbpp/300,1. MBPP+,excecao,ocasional,False,consenso
+F021,Mbpp/305,1. MBPP+,resposta_errada,sistematica,True,consenso
+F022,Mbpp/311,1. MBPP+,resposta_errada,ocasional,False,consenso
+F023,Mbpp/406,1. MBPP+,resposta_errada,sistematica,True,consenso
+F025,Mbpp/410,1. MBPP+,resposta_errada,sistematica,True,consenso
+F026,Mbpp/415,1. MBPP+,resposta_errada,sistematica,True,consenso
+F027,Mbpp/440,1. MBPP+,resposta_errada,sistematica,True,consenso
+F029,Mbpp/448,1. MBPP+,resposta_errada,sistematica,True,consenso
+F030,Mbpp/451,1. MBPP+,resposta_errada,sistematica,True,consenso
+F031,Mbpp/459,1. MBPP+,resposta_errada,sistematica,True,consenso
+F032,Mbpp/468,1. MBPP+,resposta_errada,sistematica,False,consenso
+F033,Mbpp/556,1. MBPP+,resposta_errada,ocasional,False,consenso
+F034,Mbpp/559,1. MBPP+,resposta_errada,sistematica,True,consenso
+F036,Mbpp/577,1. MBPP+,excecao,ocasional,False,consenso
+F037,Mbpp/593,1. MBPP+,resposta_errada,sistematica,True,consenso
+F038,Mbpp/597,1. MBPP+,resposta_errada,sistematica,False,consenso
+F039,Mbpp/602,1. MBPP+,resposta_errada,ocasional,False,consenso
+F040,Mbpp/620,1. MBPP+,resposta_errada,sistematica,True,consenso
+F042,Mbpp/639,1. MBPP+,resposta_errada,ocasional,False,consenso
+F043,Mbpp/735,1. MBPP+,resposta_errada,sistematica,True,consenso
+F044,Mbpp/739,1. MBPP+,resposta_errada,sistematica,True,consenso
+F045,Mbpp/74,1. MBPP+,resposta_errada,sistematica,True,consenso
+F046,Mbpp/748,1. MBPP+,resposta_errada,sistematica,True,consenso
+F048,Mbpp/771,1. MBPP+,resposta_errada,sistematica,True,consenso
+F050,Mbpp/790,1. MBPP+,resposta_errada,sistematica,True,consenso
+F052,Mbpp/800,1. MBPP+,resposta_errada,sistematica,True,consenso
+F053,Mbpp/803,1. MBPP+,resposta_errada,sistematica,True,divergência de defeito: vale A
+F054,Mbpp/806,1. MBPP+,resposta_errada,sistematica,True,consenso
+F057,abc351_a,2. LCB fácil,resposta_errada,ocasional,False,consenso
+F058,abc375_b,2. LCB fácil,resposta_errada,sistematica,False,consenso
+F059,3308,3. LCB médio,excecao,sistematica,False,consenso
+F060,3442,3. LCB médio,excecao,sistematica,False,consenso
+F061,3453,3. LCB médio,resposta_errada,ocasional,False,consenso
+F062,3613,3. LCB médio,resposta_errada,sistematica,True,consenso
+F063,3655,3. LCB médio,resposta_errada,sistematica,True,divergência de defeito: vale a evidência de execução
+F064,3763,3. LCB médio,resposta_errada,sistematica,True,consenso
+F065,abc311_c,3. LCB médio,resposta_errada,sistematica,True,consenso
+F066,abc319_c,3. LCB médio,resposta_errada,sistematica,False,consenso
+F067,abc350_c,3. LCB médio,resposta_errada,sistematica,True,consenso
+F069,abc362_c,3. LCB médio,resposta_errada,sistematica,True,consenso
+F071,abc374_d,3. LCB médio,resposta_errada,sistematica,True,consenso
+F072,abc375_c,3. LCB médio,excecao,ocasional,False,consenso
+F074,abc392_d,3. LCB médio,resposta_errada,sistematica,True,consenso
+F075,arc189_a,3. LCB médio,resposta_errada,sistematica,True,divergência de defeito: vale A
+F077,2849,4. LCB difícil,excecao,sistematica,False,divergência de defeito: vale a evidência de execução
+F078,3344,4. LCB difícil,excecao,sistematica,False,divergência de defeito: vale a evidência de execução
+F082,3575,4. LCB difícil,resposta_errada,ocasional,False,divergência de defeito: vale a evidência de execução
+F083,abc314_e,4. LCB difícil,resposta_errada,sistematica,True,consenso
+F084,abc315_e,4. LCB difícil,resposta_errada,sistematica,True,consenso
+F085,abc315_f,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F086,abc324_f,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F087,abc327_e,4. LCB difícil,resposta_errada,sistematica,True,consenso
+F088,abc333_e,4. LCB difícil,resposta_errada,sistematica,True,consenso
+F089,abc337_e,4. LCB difícil,excecao,sistematica,False,consenso
+F091,abc343_e,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F092,abc350_e,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F094,abc355_e,4. LCB difícil,excecao,sistematica,False,consenso
+F095,abc363_f,4. LCB difícil,resposta_errada,sistematica,True,consenso
+F096,abc366_g,4. LCB difícil,resposta_errada,sistematica,True,consenso
+F098,abc373_g,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F101,abc385_f,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F102,abc392_f,4. LCB difícil,excecao,sistematica,False,consenso
+F103,abc396_e,4. LCB difícil,resposta_errada,sistematica,True,consenso
+F106,arc181_c,4. LCB difícil,resposta_errada,sistematica,True,consenso
+F114,arc185_c,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F115,arc188_c,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F117,arc190_a,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F118,arc191_c,4. LCB difícil,resposta_errada,sistematica,False,consenso
+F121,arc195_c,4. LCB difícil,resposta_errada,sistematica,False,consenso

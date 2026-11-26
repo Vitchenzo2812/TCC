@@ -1,0 +1,10 @@
+﻿causa_final,ocasional,sistematica,Total
+Total,23,6,29
+Missing Corner Case,6,2,8
+Algoritmo incorreto,7,0,7
+Misinterpretation,3,1,4
+Complexidade insuficiente,3,1,4
+Silly Mistake,3,0,3
+Hallucinated Object,1,0,1
+Prompt-biased Code,0,1,1
+Non-Prompted Consideration,0,1,1

@@ -1,0 +1,10 @@
+﻿causa_final,excecao,resposta_errada,tempo_limite,Total
+Total,5,21,3,29
+Missing Corner Case,3,5,0,8
+Algoritmo incorreto,0,7,0,7
+Misinterpretation,0,4,0,4
+Complexidade insuficiente,1,0,3,4
+Silly Mistake,0,3,0,3
+Hallucinated Object,1,0,0,1
+Prompt-biased Code,0,1,0,1
+Non-Prompted Consideration,0,1,0,1

@@ -1,0 +1,10 @@
+﻿causa_final,1. MBPP+,3. LCB médio,4. LCB difícil,Total
+Total,9,3,17,29
+Missing Corner Case,3,1,4,8
+Algoritmo incorreto,0,1,6,7
+Misinterpretation,2,0,2,4
+Complexidade insuficiente,2,1,1,4
+Silly Mistake,0,0,3,3
+Hallucinated Object,0,0,1,1
+Prompt-biased Code,1,0,0,1
+Non-Prompted Consideration,1,0,0,1

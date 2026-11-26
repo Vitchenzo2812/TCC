@@ -4,3 +4,7 @@ __pycache__/
 LiveCodeBench/
 # Datasets: o do LCB tem 134 MB (acima do limite do GitHub). Ver hashes em config/params.yaml
 data/raw/datasets/
+
+# Dependências baixadas para rodar analysis/verificacoes no Docker sem rede
+analysis/verificacoes/.deps/
+logs/*_chunk*.log

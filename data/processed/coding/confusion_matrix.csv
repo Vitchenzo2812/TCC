@@ -1,0 +1,7 @@
+﻿,Algoritmo incorreto,Complexidade insuficiente,Misinterpretation,Missing Corner Case,Prompt-biased Code,Silly Mistake
+Algoritmo incorreto,2,0,0,1,0,4
+Complexidade insuficiente,0,3,0,0,0,0
+Misinterpretation,0,0,1,0,0,2
+Missing Corner Case,2,0,0,2,0,1
+Prompt-biased Code,0,0,1,0,0,0
+Silly Mistake,0,0,1,0,0,2
